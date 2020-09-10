@@ -19,6 +19,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ssh -t ttomy.cs@35.231.94.212 "cd Downloads/citest;git pull "
+  script: ssh -t ttomy.cs@35.231.94.212 "cd /home/ttomy.cs/python_travis/citest;git pull "
   on:
     branch: master
